@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { useStateCallback, usePrevious } from '../../../../constants/customHooks/customHooks' // custome useStateCallback hook
+import { useStateCallback, usePrevious } from '../../../../helper/customHooks/customHooks' // custome useStateCallback hook
 import { useSelector, useDispatch } from 'react-redux'
 import mdl from './taskRetrieve.module.css'
 import { NotificationManager, NotificationContainer } from 'react-notifications'
 import 'react-notifications/lib/notifications.css';
-import { allClass } from '../../../../constants/customHooks/customModuleClassMethod'
+import { allClass } from '../../../../helper/customHooks/customModuleClassMethod'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoadingIndicator from '../../../../components/LoadingIndicator/LoadingIndicator'

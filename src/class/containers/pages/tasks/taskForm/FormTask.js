@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import { withRouter, Link } from 'react-router-dom';
 import mdl from "./FormTask.module.css"
-import { allClass } from '../../../../constants/customHooks/customModuleClassMethod';
+import { allClass } from '../../../../helper/customHooks/customModuleClassMethod';
 import { NotificationManager, NotificationContainer } from 'react-notifications';
 import { createTaskActions, updateTaskActions } from "../../../../Redux-action"
 import LoadingIndicator from "../../../../components/LoadingIndicator/LoadingIndicator"

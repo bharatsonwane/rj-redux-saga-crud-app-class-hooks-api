@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { usePrevious } from '../../../../constants/customHooks/customHooks' // custome useStateCallback hook
+import { usePrevious } from '../../../../helper/customHooks/customHooks' // custome useStateCallback hook
 import { Link } from "react-router-dom"
 import mdl from "./TaskRetrieveDetail.module.css"
-import { allClass } from '../../../../constants/customHooks/customModuleClassMethod'
+import { allClass } from '../../../../helper/customHooks/customModuleClassMethod'
 import { deleteTaskActions } from "../../../../Redux-action/"
 import LoadingIndicator from '../../../../components/LoadingIndicator/LoadingIndicator'
 import 'react-notifications/lib/notifications.css';

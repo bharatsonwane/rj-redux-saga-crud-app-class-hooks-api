@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import mdl from "./RetrieveTask.module.css"
-import { allClass } from '../../../../constants/customHooks/customModuleClassMethod';
+import { allClass } from '../../../../helper/customHooks/customModuleClassMethod';
 import { retrieveTaskActions, deleteTaskActions } from "../../../../Redux-action/"
 import LoadingIndicator from '../../../../components/LoadingIndicator/LoadingIndicator'
 import 'react-notifications/lib/notifications.css';
