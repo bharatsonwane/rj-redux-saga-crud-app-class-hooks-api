@@ -50,8 +50,7 @@ function TaskRetrieve(props) {
     useEffect(() => {
         if (prevPropsState) {
             if (prevPropsState.retrieveResponce !== retrieveResponce && retrieveResponce) {
-                // setTaskList(JSON.parse(retrieveResponce))
-                setTaskList(retrieveResponce)
+                setTaskList(JSON.parse(retrieveResponce))
             }
             if (prevPropsState.retrieveError !== retrieveError && retrieveError) {
                 console.log(retrieveError);

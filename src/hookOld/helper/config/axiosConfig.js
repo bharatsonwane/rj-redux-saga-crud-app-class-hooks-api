@@ -52,10 +52,7 @@ const axiosConfig = () => {
         (error) => {
             if (error.response.status === 401) {
                 //dispatch action using store to show token expire popup-----
-                // store.dispatch(tokenExpiryAction.start());
-                // Cookies.remove('taskToken')
-                localStorage.removeItem("taskToken")
-                window.location.pathname = "/login"
+                // store.dispatch(tokenExpiryHandler());
                 return new Promise((resolve, reject) => {
                     reject(error);
                 });

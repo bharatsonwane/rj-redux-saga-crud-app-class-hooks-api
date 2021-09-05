@@ -20,7 +20,7 @@ export const reducerModel = (state) => state.TaskReducer;
 // }
 
 const createTaskToServer = async (payload) => {
-    const request = await axiosConfig().post(`/todo/create`, payload)
+    const request = await axiosConfig().post(`/todo`, payload)
     return await request;
 }
 
@@ -50,7 +50,7 @@ function* createTaskSaga() {
 // }
 
 const retrieveTaskFromServer = async (payload) => {
-    const request = await axiosConfig().get(`/todo/retrieve`)
+    const request = await axiosConfig().get(`/todo`)
     return await request;
 }
 
@@ -58,7 +58,6 @@ function* retrieveTaskSaga() {
     try {
         const response = yield call(retrieveTaskFromServer)
         if (response) {
-            console.log("response.data", response.data);
             yield put(retrieveTaskActions.retrieveSuccess(response.data))
         }
     } catch (error) {
@@ -76,7 +75,7 @@ function* retrieveTaskSaga() {
 // }
 
 const updateTaskToServer = async (payload) => {
-    const request = await axiosConfig().put(`/todo/update`, payload)
+    const request = await axiosConfig().put(`/todo`, payload)
     return await request;
 }
 
